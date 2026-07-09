@@ -1,3 +1,5 @@
+
+Index · HTML
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -10,70 +12,114 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+ 
 <header class="nav">
   <div class="nav-inner">
     <a href="#top" class="logo">
       <span class="logo-dots"><span class="d1"></span><span class="d2"></span><span class="d3"></span><span class="d4"></span></span>
       Lan House Itapuã II
     </a>
-    <nav class="nav-links">
+    <nav class="nav-links" id="navLinks">
       <a href="#sobre">Sobre</a>
       <a href="#servicos">Serviços</a>
       <a href="#como-funciona">Como funciona</a>
       <a href="#contato">Contato</a>
     </nav>
-    <a href="https://wa.me/556191487435?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20queria%20um%20servi%C3%A7o." class="nav-cta" target="_blank" rel="noopener">Chamar no Whats</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
-
+ 
 <main id="top">
-
+ 
   <!-- HERO -->
   <section class="hero">
     <div class="hero-text">
       <p class="eyebrow">// atendimento presencial e digital</p>
       <h1>Fazemos, editamos e corrigimos.</h1>
-      <p class="hero-sub">Currículo, serviços do Gov.br, MEI, impressões e digitalizações — resolvido rápido, do jeito que você precisa. Sem burocracia.</p>
       <div class="hero-actions">
         <a href="#servicos" class="btn btn-accent">Ver serviços</a>
       </div>
     </div>
-
+ 
     <div class="hero-terminal" aria-hidden="true">
       <div class="terminal-bar">
         <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
         <span class="terminal-title">servicos.sh</span>
       </div>
       <div class="terminal-body">
-        <p class="term-line"><span class="prompt">$</span> ./iniciar_atendimento</p>
+        <p class="term-line">./iniciar_atendimento</p>
         <p class="term-line term-out" id="termOut"></p>
-        <p class="term-line"><span class="prompt">$</span> <span class="term-cursor">▌</span></p>
+        <p class="term-line"><span class="term-cursor">▌</span></p>
       </div>
     </div>
   </section>
-
+ 
   <!-- SOBRE -->
   <section id="sobre" class="sobre">
     <div class="sobre-text">
       <p class="eyebrow">// sobre</p>
       <h2>A lan house que evoluiu e se tornou a <span class="highlight">central de serviços presencial e online</span></h2>
       <p><strong>Você chega, explica o que precisa e nós resolvemos — ou nos chame pelo WhatsApp.</strong></p>
-      <p>O que começou como um espaço para computadores, internet e jogos cresceu para oferecer muito mais. Hoje, ajudamos com currículos, documentos, serviços do MEI, atendimentos do governo, inscrições, emissão de certidões e diversos outros serviços digitais.</p>
       <p>Tudo é feito de forma presencial ou online, com atendimento rápido, orientação em linguagem simples e o suporte necessário para que você resolva suas demandas com segurança e tranquilidade.</p>
     </div>
-    <div class="sobre-stats">
-      <div class="stat"><strong>+1000</strong><span>atendimentos realizados</span></div>
-      <div class="stat"><strong>4</strong><span>categorias de serviço</span></div>
-      <div class="stat"><strong>Whats</strong><span>atendimento também online</span></div>
+    <div class="sobre-extra">
+      <p class="eyebrow center sobre-extra-eyebrow">// também aqui na loja</p>
+      <p class="sobre-extra-text">Trabalhamos também com <span class="highlight-inline">assistência técnica</span> e <span class="highlight-inline">acessórios</span> para celular.</p>
+      <div class="sobre-icons">
+        <div class="sobre-icon sobre-icon-amber">
+          <span class="sobre-icon-badge badge-amber">
+            <svg viewBox="0 0 48 48" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="18" width="7" height="12" rx="2"></rect>
+              <path d="M11 22h6c3 0 3 4 6 4h6"></path>
+              <rect x="29" y="18" width="7" height="12" rx="2"></rect>
+              <path d="M36 24h6"></path>
+            </svg>
+          </span>
+          <span>Cabos</span>
+        </div>
+        <div class="sobre-icon sobre-icon-green">
+          <span class="sobre-icon-badge badge-green">
+            <svg viewBox="0 0 48 48" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="14" y="6" width="20" height="12" rx="2"></rect>
+              <path d="M18 6V3M30 6V3"></path>
+              <path d="M24 18v8"></path>
+              <path d="M17 26h14l-3 12h-8l-3-12Z"></path>
+            </svg>
+          </span>
+          <span>Carregadores</span>
+        </div>
+        <div class="sobre-icon sobre-icon-blue">
+          <span class="sobre-icon-badge badge-blue">
+            <svg viewBox="0 0 48 48" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 26v-2a16 16 0 0 1 32 0v2"></path>
+              <rect x="6" y="26" width="8" height="12" rx="3"></rect>
+              <rect x="34" y="26" width="8" height="12" rx="3"></rect>
+            </svg>
+          </span>
+          <span>Fones de ouvido</span>
+        </div>
+        <div class="sobre-icon sobre-icon-red">
+          <span class="sobre-icon-badge badge-red">
+            <svg viewBox="0 0 48 48" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="16" y="6" width="16" height="28" rx="3"></rect>
+              <path d="M22 30h4"></path>
+              <path d="M30 32 40 42l3-3-10-10-3 3Z"></path>
+              <path d="M33 29l4 4"></path>
+            </svg>
+          </span>
+          <span>Assistência técnica</span>
+        </div>
+      </div>
     </div>
   </section>
-
+ 
   <!-- SERVIÇOS -->
   <section id="servicos" class="servicos">
     <p class="eyebrow center">// serviços</p>
     <h2 class="center">O que resolvemos aqui</h2>
-
+ 
     <div class="cards">
       <article class="card card-amber">
         <span class="card-tag">01</span>
@@ -85,7 +131,7 @@
           <li>Declarações</li>
         </ul>
       </article>
-
+ 
       <article class="card card-green">
         <span class="card-tag">02</span>
         <h3>Gov.br</h3>
@@ -96,7 +142,7 @@
           <li>Inscrição ENEM / concursos</li>
         </ul>
       </article>
-
+ 
       <article class="card card-blue">
         <span class="card-tag">03</span>
         <h3>Empresas (MEI)</h3>
@@ -107,7 +153,7 @@
           <li>Certidões</li>
         </ul>
       </article>
-
+ 
       <article class="card card-red">
         <span class="card-tag">04</span>
         <h3>Outros</h3>
@@ -119,7 +165,7 @@
       </article>
     </div>
   </section>
-
+ 
   <!-- COMO FUNCIONA -->
   <section id="como-funciona" class="como-funciona">
     <p class="eyebrow center">// como funciona</p>
@@ -142,15 +188,15 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- CONTATO -->
   <section id="contato" class="contato">
     <div class="contato-box">
       <p class="eyebrow">// contato</p>
       <h2>Bora resolver isso hoje?</h2>
       <p class="contato-sub">Chama no WhatsApp — respondemos rápido e já entendemos o que você precisa.</p>
-      <a href="https://wa.me/556191487435?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20queria%20um%20servi%C3%A7o." class="btn btn-primary btn-lg" target="_blank" rel="noopener">Falar no WhatsApp agora</a>
-
+      <a href="https://wa.me/556191487435?text=Ol%C3%A1!%20Obrigado%20por%20entrar%20em%20contato.%20%F0%9F%91%8B%0ANo%20momento%20estou%20realizando%20um%20atendimento%2C%20mas%20j%C3%A1%20vou%20te%20responder!" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Falar no WhatsApp agora</a>
+ 
       <div class="contato-info">
         <div>
           <h4>Endereço</h4>
@@ -161,19 +207,33 @@
           <p>Segunda a sexta — 08h às 20h<br>Sábado — 09h às 19h</p>
         </div>
       </div>
+ 
+      <div class="contato-map">
+        <iframe
+          src="https://maps.google.com/maps?q=place_id:ChIJpZzyTC9xWpMR5oVz2mXTnYY&z=16&ie=UTF8&iwloc=&output=embed"
+          width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="Localização da Lan House Itapuã II">
+        </iframe>
+      </div>
     </div>
   </section>
-
+ 
 </main>
-
+ 
 <footer class="footer">
-  <p>© <span id="year"></span> Lan House Online — feito com HTML, CSS e JS.</p>
+  <p class="footer-contato">
+    Contato:
+    <a href="https://wa.me/556191487435?text=Ol%C3%A1!%20Obrigado%20por%20entrar%20em%20contato.%20%F0%9F%91%8B%0ANo%20momento%20estou%20realizando%20um%20atendimento%2C%20mas%20j%C3%A1%20vou%20te%20responder!" target="_blank" rel="noopener">
+      61 99148-7435 (WhatsApp)
+    </a>
+  </p>
+  <p>© <span id="year"></span> Lan House Itapuã II</p>
 </footer>
-
-<a href="https://wa.me/556191487435?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20queria%20um%20servi%C3%A7o." class="whats-float" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+ 
+<a href="https://wa.me/556191487435?text=Ol%C3%A1!%20Obrigado%20por%20entrar%20em%20contato.%20%F0%9F%91%8B%0ANo%20momento%20estou%20realizando%20um%20atendimento%2C%20mas%20j%C3%A1%20vou%20te%20responder!" class="whats-float" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
   <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor"><path d="M16.02 2.667c-7.36 0-13.33 5.97-13.33 13.33 0 2.35.62 4.55 1.7 6.46L2.67 29.33l6.99-1.83a13.24 13.24 0 0 0 6.36 1.62h.01c7.36 0 13.33-5.97 13.33-13.33 0-3.56-1.39-6.91-3.9-9.43a13.24 13.24 0 0 0-9.43-3.9Zm0 24.4h-.01a11.1 11.1 0 0 1-5.66-1.55l-.4-.24-4.15 1.09 1.11-4.04-.26-.42a11.05 11.05 0 0 1-1.7-5.9c0-6.13 4.99-11.12 11.13-11.12 2.97 0 5.76 1.16 7.86 3.26a11.03 11.03 0 0 1 3.25 7.87c0 6.13-4.99 11.12-11.12 11.12Zm6.1-8.33c-.33-.17-1.97-.97-2.28-1.08-.31-.11-.53-.17-.75.17-.22.33-.86 1.08-1.06 1.3-.2.22-.39.25-.72.08-.33-.17-1.4-.51-2.66-1.63-.98-.87-1.65-1.95-1.84-2.28-.19-.33-.02-.5.15-.67.15-.15.33-.39.5-.58.17-.2.22-.33.33-.55.11-.22.06-.42-.03-.58-.08-.17-.75-1.8-1.03-2.47-.27-.64-.55-.56-.75-.57h-.64c-.22 0-.58.08-.88.42-.3.33-1.15 1.12-1.15 2.74s1.18 3.18 1.34 3.4c.17.22 2.32 3.55 5.63 4.98.79.34 1.4.55 1.88.7.79.25 1.51.21 2.08.13.63-.1 1.97-.8 2.25-1.58.28-.77.28-1.43.2-1.58-.09-.14-.31-.23-.64-.4Z"/></svg>
 </a>
-
+ 
 <script src="script.js"></script>
 </body>
 </html>
