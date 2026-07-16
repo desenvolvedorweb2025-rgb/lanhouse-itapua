@@ -243,6 +243,15 @@ ul { margin: 0; padding: 0; list-style: none; }
   overflow: hidden;
   object-fit: cover;
   width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.mug-photo:hover {
+  transform: scale(1.04);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 2;
 }
 
 .mug-photo.placeholder {
