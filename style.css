@@ -225,20 +225,14 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .mug-gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.mug-photo:first-child {
-  grid-column: 1 / -1;
-  aspect-ratio: 21 / 9;
-}
-
-.mug-photo:not(:first-child) {
-  aspect-ratio: 4 / 3;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  max-width: 75%;
+  margin: 0 auto;
 }
 
 .mug-photo {
+  aspect-ratio: 1;
   border-radius: var(--radius);
   overflow: hidden;
   object-fit: cover;
@@ -449,8 +443,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 /* ===================== RESPONSIVO ===================== */
 @media (max-width: 600px) {
-  .mug-gallery { grid-template-columns: 1fr; }
-  .mug-photo:not(:first-child) { aspect-ratio: 16 / 9; }
+  .mug-gallery { grid-template-columns: 1fr; max-width: 75%; }
 }
 
 @media (max-width: 860px) {
