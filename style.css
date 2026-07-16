@@ -209,8 +209,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .mug-inner {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1fr;
+  gap: 32px;
   align-items: center;
 }
 
@@ -225,12 +225,20 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .mug-gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.mug-photo:first-child {
+  grid-column: 1 / -1;
+  aspect-ratio: 21 / 9;
+}
+
+.mug-photo:not(:first-child) {
+  aspect-ratio: 4 / 3;
 }
 
 .mug-photo {
-  aspect-ratio: 1;
   border-radius: var(--radius);
   overflow: hidden;
   object-fit: cover;
@@ -431,6 +439,11 @@ ul { margin: 0; padding: 0; list-style: none; }
 .whatsapp-float:hover { transform: scale(1.08); }
 
 /* ===================== RESPONSIVO ===================== */
+@media (max-width: 600px) {
+  .mug-gallery { grid-template-columns: 1fr; }
+  .mug-photo:not(:first-child) { aspect-ratio: 16 / 9; }
+}
+
 @media (max-width: 860px) {
   .mug-inner { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr; }
