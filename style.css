@@ -235,10 +235,11 @@ ul { margin: 0; padding: 0; list-style: none; }
   aspect-ratio: 1;
   border-radius: var(--radius);
   overflow: hidden;
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
   padding: 18px;
   background: var(--gold);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
