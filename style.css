@@ -237,6 +237,8 @@ ul { margin: 0; padding: 0; list-style: none; }
   overflow: hidden;
   object-fit: cover;
   width: 100%;
+  padding: 10px;
+  background: var(--gold);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
@@ -440,6 +442,24 @@ ul { margin: 0; padding: 0; list-style: none; }
   transition: transform 0.15s ease;
 }
 .whatsapp-float:hover { transform: scale(1.08); }
+
+/* ===================== IGUALAR TAMANHO DOS BOTÕES ===================== */
+
+/* Instagram do tamanho do "Fazer meu pedido" */
+.btn-dark,
+.mug-partner-link {
+  width: 260px;
+  justify-content: center;
+}
+
+/* WhatsApp (hero) do tamanho do "Ver serviços" */
+.hero-actions .btn-whatsapp,
+.hero-actions .btn-outline {
+  width: 220px;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+}
 
 /* ===================== RESPONSIVO ===================== */
 @media (max-width: 600px) {
